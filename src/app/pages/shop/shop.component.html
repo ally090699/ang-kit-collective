@@ -1,0 +1,7 @@
+<div class="container flex-center">
+    <h4 class="title"><span role="img" aria-label="Yarn emoji">🧶</span>Products</h4>
+    <div class="grid">
+        <product-card *ngFor="let product of products; index as i;"
+        [product]="product" [index]="i"></product-card>
+    </div>
+</div>

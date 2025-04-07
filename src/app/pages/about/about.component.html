@@ -1,0 +1,22 @@
+<div class="container">
+    <div id="aboutsect">
+        <h4 class="title">
+            <span role="img" aria-label="Girl emoji">👩🏻</span> About Us
+        </h4>
+        <div class="content">
+            <img [src]="img1" alt="Sample Summer Top Crochet Kit Contents"/>
+            <div>
+                <p>Welcome to Kit Collective, your go-to destination for all things crochet!</p>
+                <p>We’re dedicated to inspiring every crafter with our thoughtfully curated crochet kits designed for all skill levels. From cozy hats and scarves to fun amigurumi keychains and trendy summer tops, our kits include everything you need, including high-quality materials and step-by-step instructions to help you create pieces you’ll love.</p>
+                <p>At Kit Collective, we encourage you to share your journey! Submit photos of your crochet kit creations to be featured on our website and social media!</p>
+            </div>
+            <img [src]="img2" alt="Sample Scrunchie Crochet Kit Complete"/>
+        </div>
+    </div>
+
+    <div id="aboutteam">
+        <h4 class="subtitle">Our Team</h4>
+        <employee-card *ngFor="let employee of employees; index as i;"
+        [employee]="employee" [index]="i"></employee-card>
+    </div>
+</div>

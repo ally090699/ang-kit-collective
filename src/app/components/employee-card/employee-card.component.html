@@ -1,0 +1,8 @@
+<div class="employee-card" *ngIf="employee">
+    <img width="300" alt="Employee Headshot" [src]="employee.imgUrl">
+    <div class="employee-info">
+        <h4 class="employee-name">{{employee.name}}</h4>
+        <h6 class="employee-position">{{employee.position}}</h6>
+        <p class="employee-bio">{{employee.bio}}</p>
+    </div>
+</div>
